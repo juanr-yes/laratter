@@ -14,7 +14,7 @@
           @endforeach
         @endif
         <br>
-        <input type="file" name="image" id="" class="form-control-file">
+        {{-- <input type="file" name="image" id="" class="form-control-file"> --}}
         {{ csrf_field() }}
       </div>
     </form>
