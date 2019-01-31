@@ -17,7 +17,7 @@ class CreateMesssagesTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('content');
-            $table->string('image');
+            $table->string('image')->nullable();
         });
     }
 
