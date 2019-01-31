@@ -17,7 +17,7 @@ class MessagesController extends Controller {
     $user = $request->user();
     $message = Message::create([
       'content' => $request->input('message'),
-      'image' => $request->file('image')->store('messages', 'public'),
+      // 'image' => $request->file('image')->store('messages', 'public'),
       'user_id' => $user->id
     ]);
     return redirect('/messages/'.$message->id);
